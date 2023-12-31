@@ -2,8 +2,10 @@ import express, { Application, NextFunction, Request, Response } from 'express'
 import { logger } from '../utils/logger'
 import { i18n } from './i18n'
 import uuid from './uuid'
+import cors from 'cors'
 
 export default (app: Application) => {
+	app.use(cors())
 	app.use(express.json())
 	app.use(express.urlencoded({ limit: '500mb', extended: true }))
 	app.use(i18n.init) // support internationalization
