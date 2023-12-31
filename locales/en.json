@@ -1,3 +1,22 @@
 {
-	"SERVICE_UNAVAILABLE": "Service is unavailble"
+	"SERVICE_UNAVAILABLE": "Service is unavailble",
+	"SERVER_ERROR_MESSAGE": "Internal Server Error",
+	"CURRENCY": {
+		"SUCCESS": "Currency conversion succussfully",
+		"LIST": "Currency list",
+		"VALIDATIONS": {
+			"source_currency": {
+				"required": "source_currency is required",
+				"valid": "source_currency should be string"
+			},
+			"target_currency": {
+				"required": "target_currency is required",
+				"valid": "target_currency should be string"
+			},
+			"amount": {
+				"required": "amount is required",
+				"valid": "amount should be number"
+			}
+		}
+	}
 }

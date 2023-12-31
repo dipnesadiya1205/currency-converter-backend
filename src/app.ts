@@ -1,13 +1,13 @@
 import express, { Request, Response } from 'express'
 import { logger } from './utils/logger'
 import middlewares from './middlewares'
-// import routes from './routes'
+import routes from './routes'
 
 const app: express.Application = express()
 
 middlewares(app) // bind middlewares
 
-// routes(app) // initialize all routes
+routes(app) // initialize all routes
 
 // Base route to health check
 app.get('/health', (req: Request, res: Response) => {
